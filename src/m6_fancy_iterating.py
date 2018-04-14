@@ -455,10 +455,12 @@ def print_items_that_are_bigger_than_5(sequence):
     Precondition: All the items in the sequence are integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
-
+    for k in range(len(sequence)):
+        if sequence[k] > 5:
+            print(sequence[k], 'is at', k)
 
 # ----------------------------------------------------------------------
 # Iterating through a sequence, selecting items:
