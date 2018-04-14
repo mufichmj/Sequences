@@ -479,7 +479,7 @@ def print_items_that_are_strings(sequence):
       bone is at index 4
     """
     # ------------------------------------------------------------------
-    # TODO: 8. Implement and test this function.
+    # DONE: 8. Implement and test this function.
     #
     # IMPORTANT:
     #   -- A string is, by definition, an object whose type is   str.
@@ -491,7 +491,9 @@ def print_items_that_are_strings(sequence):
     #
     #        Note that   str   has NO quotes surrounding it.
     # ------------------------------------------------------------------
-
+    for k in range(len(sequence)):
+        if type(sequence[k]) is str:
+            print(sequence[k], 'is at index', k)
 
 # ----------------------------------------------------------------------
 # Iterating through a sequence, selecting items:
