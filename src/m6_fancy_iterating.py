@@ -377,10 +377,10 @@ def print_all_items_backwards(sequence):
        55
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
-    for k in range(-1, -1, len(sequence)):
+    for k in range(len(sequence)-1, -1, -1):
         print(sequence[k])
 
 # ----------------------------------------------------------------------
@@ -400,11 +400,11 @@ def print_items_at_odd_indices(sequence):
       33 is at index 5
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #          Tests have been written for you (above).
     # ------------------------------------------------------------------
-
-
+    for k in range(1, len(sequence), 2):
+        print(sequence[k], k)
 # ----------------------------------------------------------------------
 # Iterating through PART of a sequence:
 #   -- in this sample problem, the second half.
